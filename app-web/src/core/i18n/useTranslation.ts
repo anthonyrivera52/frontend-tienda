@@ -2,28 +2,14 @@
 
 import { useParams } from 'next/navigation'
 import { useState, useEffect } from 'react'
+import translationsENData from '../../../public/locales/en/common.json'
+import translationESData from '../../../public/locales/es/common.json'
 
 // Traducciones simples (puedes expandir esto según tus necesidades)
 const translations = {
-  es: {
-    dashboardTitle: 'Panel de Control',
-    dashboardDescription: 'Bienvenido a tu panel de control',
-    logout: 'Cerrar sesión',
-    loading: 'Cargando...',
-    name: 'Nombre',
-    email: 'Email',
-    role: 'Rol'
-  },
-  en: {
-    dashboardTitle: 'Dashboard',
-    dashboardDescription: 'Welcome to your dashboard',
-    logout: 'Logout',
-    loading: 'Loading...',
-    name: 'Name',
-    email: 'Email',
-    role: 'Role'
-  }
-}
+  en: translationsENData,
+  es: translationESData, // create a copy of the English translation data and modify it for Spanish
+};
 
 export function useTranslation() {
   const [mounted, setMounted] = useState(false);
@@ -35,9 +21,10 @@ export function useTranslation() {
   
   const locale = mounted ? (params?.locale as string || 'es') : 'es';
   
-  const t = (key: string) => {
-    return translations[locale as keyof typeof translations]?.[key as keyof typeof translations.es] || key
-  }
+const t = (key: string) => {
+  const translationData = translations[locale as keyof typeof translations];
+    return (translationData as Record<string, string>)?.[key] || key;
+};
   
   return {
     t,

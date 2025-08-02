@@ -1,4 +1,9 @@
 {
-  "dashboardTitle": "Tablero",
-  "dashboardDescription": "Bienvenido a tu tablero"
+    "dashboardTitle": "Panel de Control",
+    "dashboardDescription": "Bienvenido a tu panel de control",
+    "logout": "Cerrar sesión",
+    "loading": "Cargando...",
+    "name": "Nombre",
+    "email": "Email",
+    "role": "Rol"
 }
