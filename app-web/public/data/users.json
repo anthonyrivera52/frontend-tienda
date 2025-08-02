@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1",
+    "email": "usuario@ejemplo.com",
+    "password": "$2a$12$eOWM2ZYwLc6VSEcwH/C.3.MtPpUwNJbi5/fmit0rLdLitZZheoUZG",
+    "name": "Usuario Demo",
+    "role": "user",
+    "createdAt": "2023-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "2",
+    "email": "admin@ejemplo.com",
+    "password": "$2a$12$eOWM2ZYwLc6VSEcwH/C.3.MtPpUwNJbi5/fmit0rLdLitZZheoUZG",
+    "name": "Administrador",
+    "role": "admin",
+    "createdAt": "2023-01-01T00:00:00.000Z"
+  }
+]

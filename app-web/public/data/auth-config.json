@@ -1,0 +1,7 @@
+{
+  "jwtSecret": "your-secret-key-for-development-only",
+  "accessTokenExpiresIn": "1h",
+  "refreshTokenExpiresIn": "7d",
+  "cookieName": "auth-token",
+  "secureCookie": false
+}

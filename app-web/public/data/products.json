@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "name": "Laptop Pro",
+    "description": "Laptop de alta gama para profesionales",
+    "price": 1299.99,
+    "stock": 10,
+    "category": "electronics",
+    "image": "https://via.placeholder.com/300"
+  },
+  {
+    "id": "2",
+    "name": "Smartphone X",
+    "description": "Smartphone con la última tecnología",
+    "price": 899.99,
+    "stock": 15,
+    "category": "electronics",
+    "image": "https://via.placeholder.com/300"
+  },
+  {
+    "id": "3",
+    "name": "Auriculares Inalámbricos",
+    "description": "Auriculares con cancelación de ruido",
+    "price": 199.99,
+    "stock": 30,
+    "category": "accessories",
+    "image": "https://via.placeholder.com/300"
+  },
+  {
+    "id": "4",
+    "name": "Monitor 4K",
+    "description": "Monitor de alta resolución para diseñadores",
+    "price": 499.99,
+    "stock": 5,
+    "category": "electronics",
+    "image": "https://via.placeholder.com/300"
+  }
+]
