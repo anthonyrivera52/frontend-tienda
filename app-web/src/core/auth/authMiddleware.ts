@@ -97,7 +97,7 @@ export async function authMiddleware(request: NextRequest) {
   
   // Usuario no autenticado intentando acceder a ruta protegida
   console.log(`Middleware: Usuario no autenticado intentando acceder a ruta protegida: ${path}, redirigiendo al login`);
-  const loginUrl = new URL(`/${locale}/login`, request.url);
-  loginUrl.searchParams.set('redirect', path);
+  const loginUrl = new URL('/login', request.url);
+  // loginUrl.searchParams.set('redirect', path);
   return NextResponse.redirect(loginUrl);
 }

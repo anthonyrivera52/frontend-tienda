@@ -1,4 +1,18 @@
 {
   "dashboardTitle": "Dashboard",
-  "dashboardDescription": "Welcome to your dashboard"
+  "dashboardDescription": "Welcome to your dashboard",
+  "dashboard": "Dashboard",
+  "campaigns": "Campaigns",
+  "categories": "Categories",
+  "chat": "Chat",
+  "iva": "IVA",
+  "inventory": "Inventory",
+  "feedback_and_question": "Feedback and Questions",
+  "orders": "Orders",
+  "roles": "Roles",
+  "permissions": "Permissions",
+  "products": "Products",
+  "payment_methods": "Payment Methods",
+  "users": "Users",
+  "settings": "Settings"
 }

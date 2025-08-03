@@ -5,5 +5,21 @@
     "loading": "Cargando...",
     "name": "Nombre",
     "email": "Email",
-    "role": "Rol"
+    "role": "Rol",
+    "createRegister": "Crear cuenta",
+  "dashboard": "Tablero",
+  "campaigns": "Campañas",
+  "categories": "Categorías",
+  "chat": "Chat",
+  "iva": "IVA",
+  "inventory": "Inventario",
+  "feedback_and_question": "Comentarios y Preguntas",
+  "orders": "Pedidos",
+  "roles": "Roles",
+  "permissions": "Permisos",
+  "products": "Productos",
+  "payment_methods": "Métodos de Pago",
+  "users": "Usuarios",
+  "settings": "Configuraciones"
+
 }

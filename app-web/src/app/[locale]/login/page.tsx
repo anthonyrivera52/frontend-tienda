@@ -47,7 +47,7 @@ export default function LoginPage({ params }: { params: Promise<{ locale: string
         // Esperar un poco para que el estado se actualice y luego redirigir
         setTimeout(() => {
           router.replace(redirectTo);
-        }, 100);
+        }, 5000);
       } else {
         showError('Credenciales inválidas');
       }
