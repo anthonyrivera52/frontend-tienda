@@ -1,13 +1,17 @@
 
 "use client";
 import { useMemo, useState } from "react";
-import { ChevronDown, LucideIcon } from "lucide-react";
+import { ChevronDown, LucideIcon, User } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
 
 import SubMenuItem from "./sub-item";
 import { ISidebarItem } from "@/lib/types";
+import { iconMap } from "../contants";
+import { useTheme } from "next-themes";
 
 const SidebarItem = ({ item }: { item: ISidebarItem }) => {
+
+  const { resolvedTheme } = useTheme(); 
   const { name, icon: Icon, items, path } = item;
   const [expanded, setExpanded] = useState(false);
   const router = useRouter();
@@ -31,6 +35,9 @@ const SidebarItem = ({ item }: { item: ISidebarItem }) => {
     return path === pathname;
   }, [items, path, pathname]);
 
+  const IconComponent = iconMap[Icon] || User;
+
+  const textSystem = resolvedTheme === 'dark' ? 'flex items-center space-x-2 text-white' : 'flex items-center space-x-2 text-black'
   return (
     <>
       <div
@@ -39,8 +46,8 @@ const SidebarItem = ({ item }: { item: ISidebarItem }) => {
     `}
         onClick={onClick}
       >
-        <div className="flex items-center space-x-2">
-          <Icon size={20} />
+        <div className={textSystem}>
+          <IconComponent />
           <p className="text-sm font-semibold">{name} </p>
         </div>
         {items && items.length > 0 && <ChevronDown size={18} />}

@@ -1,10 +1,12 @@
-"use client";
+'use client';
+import { useTranslation } from "@/core/i18n/useTranslation";
 import { ISubItem } from "@/lib/types";
 import { usePathname, useRouter } from "next/navigation";
 import React, { useMemo } from "react";
 
 const SubMenuItem = ({ item }: { item: ISubItem }) => {
   const { name, path } = item;
+  const { t } = useTranslation();
   const router = useRouter();
   const pathname = usePathname();
 
@@ -14,6 +16,7 @@ const SubMenuItem = ({ item }: { item: ISubItem }) => {
 
   const isActive = useMemo(() => path === pathname, [path, pathname]);
 
+  console.log('item ', name, path)
   return (
     <div
       className={`text-sm hover:text-sidebar-active hover:font-semibold cursor-pointer ${
@@ -21,7 +24,7 @@ const SubMenuItem = ({ item }: { item: ISubItem }) => {
       }`}
       onClick={onClick}
     >
-      {name}
+      {t(name)}
     </div>
   );
 };

@@ -4,6 +4,7 @@ import { AuthProviderWrapper } from '../../core/auth/AuthProviderWrapper';
 import { LayoutClient } from './LayoutClient';
 import { ToastProvider } from '../../shared/contexts/ToastContext';
 import '../globals.css';
+import { ThemeProvider } from 'next-themes';
 
 export async function generateStaticParams() {
   return i18nConfig.locales.map(locale => ({ locale }));
@@ -39,13 +40,15 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
   return (
     <html lang={locale} dir="ltr">
       <body>
-        <ToastProvider>
-          <AuthProviderWrapper authConfig={authConfig}>
-            <LayoutClient locale={locale}>
-              {children}
-            </LayoutClient>
-          </AuthProviderWrapper>
-        </ToastProvider>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <ToastProvider>
+            <AuthProviderWrapper authConfig={authConfig}>
+              <LayoutClient locale={locale}>
+                {children}
+              </LayoutClient>
+            </AuthProviderWrapper>
+          </ToastProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

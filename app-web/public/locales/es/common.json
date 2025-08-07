@@ -1,12 +1,12 @@
 {
-    "dashboardTitle": "Panel de Control",
-    "dashboardDescription": "Bienvenido a tu panel de control",
-    "logout": "Cerrar sesión",
-    "loading": "Cargando...",
-    "name": "Nombre",
-    "email": "Email",
-    "role": "Rol",
-    "createRegister": "Crear cuenta",
+  "dashboardTitle": "Panel de Control",
+  "dashboardDescription": "Bienvenido a tu panel de control",
+  "logout": "Cerrar sesión",
+  "loading": "Cargando...",
+  "name": "Nombre",
+  "email": "Email",
+  "role": "Rol",
+  "createRegister": "Crear cuenta",
   "dashboard": "Tablero",
   "campaigns": "Campañas",
   "categories": "Categorías",
@@ -20,6 +20,7 @@
   "products": "Productos",
   "payment_methods": "Métodos de Pago",
   "users": "Usuarios",
-  "settings": "Configuraciones"
-
+  "settings": "Configuraciones",
+  "summary": "Resumen",
+  "order_status": "Estado de las Ordenes"
 }

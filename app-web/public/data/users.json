@@ -4,15 +4,185 @@
     "email": "usuario@ejemplo.com",
     "password": "$2a$12$eOWM2ZYwLc6VSEcwH/C.3.MtPpUwNJbi5/fmit0rLdLitZZheoUZG",
     "name": "Usuario Demo",
-    "role": "user",
-    "createdAt": "2023-01-01T00:00:00.000Z"
+    "role": "admin",
+    "createdAt": "2023-01-01T00:00:00.000Z",
+    "menu": [
+        {
+          "name": "dashboard",
+          "path": "/dashboard",
+          "icon": "Home",
+          "isActive": true,
+          "permissions": {
+            "canCreate": true,
+            "canRead": true,
+            "canUpdate": true,
+            "canDelete": true
+          }
+        },
+        {
+          "name": "Campañas",
+          "path": "/dashboard/campaigns",
+          "icon": "Gift",
+          "isActive": true,
+          "permissions": {
+            "canCreate": true,
+            "canRead": true,
+            "canUpdate": true,
+            "canDelete": true
+          }
+        },
+        {
+          "name": "Categoria",
+          "path": "/dashboard/categories",
+          "icon": "Castle",
+          "isActive": true,
+          "permissions": {
+            "canCreate": true,
+            "canRead": true,
+            "canUpdate": true,
+            "canDelete": true
+          }
+        },
+        {
+          "name": "Chat",
+          "path": "/dashboard/chat",
+          "icon": "MessageCircleMore",
+          "isActive": true,
+          "permissions": {
+            "canCreate": true,
+            "canRead": true,
+            "canUpdate": true,
+            "canDelete": true
+          }
+        },
+        {
+          "name": "Iva",
+          "path": "/dashboard/iva",
+          "icon": "PersonStanding",
+          "isActive": true,
+          "permissions": {
+            "canCreate": true,
+            "canRead": true,
+            "canUpdate": true,
+            "canDelete": true
+          }
+        },
+        {
+          "name": "Inventario",
+          "path": "/dashboard/inventory",
+          "icon": "WalletCards",
+          "isActive": true,
+          "permissions": {
+            "canCreate": true,
+            "canRead": true,
+            "canUpdate": true,
+            "canDelete": true
+          }
+        },
+        {
+          "name": "FeedBack and Question",
+          "path": "/dashboard/feedback",
+          "icon": "MessageCircleMore",
+          "isActive": true,
+          "permissions": {
+            "canCreate": true,
+            "canRead": true,
+            "canUpdate": true,
+            "canDelete": true
+          }
+        },
+        {
+          "name": "Orders",
+          "path": "/dashboard/orders",
+          "icon": "Home",
+          "isActive": true,
+          "permissions": {
+            "canCreate": true,
+            "canRead": true,
+            "canUpdate": true,
+            "canDelete": true
+          }
+        },
+        {
+          "name": "Roles",
+          "path": "/dashboard/roles",
+          "icon": "WalletCards",
+          "isActive": true,
+          "permissions": {
+            "canCreate": true,
+            "canRead": true,
+            "canUpdate": true,
+            "canDelete": true
+          }
+        },
+        {
+          "name": "Permisos",
+          "path": "/dashboard/permisos",
+          "icon": "PersonStanding",
+          "isActive": true,
+          "permissions": {
+            "canCreate": true,
+            "canRead": true,
+            "canUpdate": true,
+            "canDelete": true
+          }
+        },
+        {
+          "name": "Productos",
+          "path": "/dashboard/product",
+          "icon": "WalletCards",
+          "isActive": true,
+          "permissions": {
+            "canCreate": true,
+            "canRead": true,
+            "canUpdate": true,
+            "canDelete": true
+          }
+        },
+        {
+          "name": "Metodos Pagos",
+          "path": "/dashboard/transactions",
+          "icon": "WalletCards",
+          "isActive": true,
+          "permissions": {
+            "canCreate": true,
+            "canRead": true,
+            "canUpdate": true,
+            "canDelete": true
+          }
+        },
+        {
+          "name": "Usuarios",
+          "path": "/dashboard/profile",
+          "icon": "User",
+          "isActive": true,
+          "permissions": {
+            "canCreate": true,
+            "canRead": true,
+            "canUpdate": true,
+            "canDelete": true
+          }
+        },
+        {
+          "name": "Settings",
+          "path": "/dashboard/settings",
+          "icon": "Settings",
+          "isActive": true,
+          "permissions": {
+            "canCreate": true,
+            "canRead": true,
+            "canUpdate": true,
+            "canDelete": true
+          }
+        }
+    ]
   },
   {
     "id": "2",
-    "email": "admin@ejemplo.com",
+    "email": "vendor@ejemplo.com",
     "password": "$2a$12$eOWM2ZYwLc6VSEcwH/C.3.MtPpUwNJbi5/fmit0rLdLitZZheoUZG",
-    "name": "Administrador",
-    "role": "admin",
+    "name": "Vendedor",
+    "role": "vendor",
     "createdAt": "2023-01-01T00:00:00.000Z"
   }
 ]

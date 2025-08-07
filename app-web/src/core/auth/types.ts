@@ -1,3 +1,5 @@
+import { ISidebarItem } from "@/lib/types";
+
 export interface AuthTokens {
   accessToken: string;
   refreshToken: string;
@@ -23,4 +25,5 @@ export interface AuthUser {
   email: string;
   name: string;
   role: string;
+  menu: ISidebarItem[]
 }
