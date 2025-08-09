@@ -1,0 +1,6 @@
+[
+    { "title": "Pending Order", "value": "0", "icon": "📋", "color": "blue" },
+    { "title": "Processing Order", "value": "0", "icon": "👥", "color": "orange" },
+    { "title": "Completed Order", "value": "0", "icon": "📦", "color": "green" },
+    { "title": "Cancelled Order", "value": "0", "icon": "💰", "color": "yellow" }
+]

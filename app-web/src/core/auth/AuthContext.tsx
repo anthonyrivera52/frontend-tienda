@@ -157,12 +157,9 @@ export const AuthProvider = ({ children, authConfig }: AuthProviderProps) => {
     try {
       const result = await authService.login(email, password);
       if (result && result.user && result.tokens) {
-        console.log('login user login: ', result.user)
         setUser(result.user);
         saveTokens(result.tokens);
 
-        console.log('log user : ', user);
-        
         // Pequeño delay para asegurar que el estado se actualice
         setTimeout(() => {
           console.log('Login exitoso, usuario autenticado');

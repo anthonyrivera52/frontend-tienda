@@ -1,0 +1,26 @@
+[
+    { 
+        "title": "Total Revenue",
+        "value": "$1,918.80",
+        "icon": "💰", 
+        "color": "teal"
+    },
+    { 
+        "title": "Total Order",
+        "value": "14", 
+        "icon": "🛒", 
+        "color": "purple" 
+    },
+    { 
+        "title": "Vendor", 
+        "value": "11", 
+        "icon": "📋", 
+        "color": "indigo" 
+    },
+    { 
+        "title": "Total Shops", 
+        "value": "14", 
+        "icon": "🏪", 
+        "color": "rose" 
+    }
+]
